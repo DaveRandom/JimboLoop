@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-use JimboLoop\Loop;
+namespace JimboLoop;
 
 require __DIR__ . '/../vendor/autoload.php';
 

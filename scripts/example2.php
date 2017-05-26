@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-use JimboLoop\Loop;
+namespace JimboLoop;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -9,7 +9,7 @@ $loop = new Loop;
 // shorter way of writing the code on example #1
 for ($i = 1; $i <= 5; $i++) {
     $loop->setTimeout($i * 1000, function() use($i) {
-        echo "$i seconds have passed\n";
+        echo "{$i} seconds have passed\n";
     });
 }
 
@@ -34,9 +34,6 @@ foreach ($domains as $domain) {
             echo "Received {$len} bytes from {$domain}\n";
         });
     });
-}
-
-for ($i = 1; $i <= 5; $i++) {
 }
 
 $loop->run();
