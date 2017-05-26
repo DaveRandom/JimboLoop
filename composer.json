@@ -1,0 +1,17 @@
+{
+    "name": "daverandom/jimbo-loop",
+    "description": "Jimbo's own personal event loop implementation",
+    "minimum-stability": "stable",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Chris Wright",
+            "email": "cw@daverandom.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JimboLoop\\": "src/"
+        }
+    }
+}
